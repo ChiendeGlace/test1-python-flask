@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkoutPlanner</title>
+    <link rel="stylesheet" href="./../static/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🏋️ WorkoutPlanner</h1>
+    </header>
+    <main id="form-section" class="question-container">
+        <h2 id="question-text">Choose your plan type</h2>
+        <div id="options" class="box">
+          <!-- kafelki generowane dynamicznie -->
+        </div>
+      
+        <!-- 🔽 TU jest twój przycisk NEXT -->
+        <button id="next-btn" style="display: none;">Next</button>
+    </main>
+
+    <main id="planner-section" class="container" style="display: none;">
+      <!-- Left: Activation -->
+      <section class="column">
+        <h2>Muscle Activation</h2>
+        <div class="box" id="muscle-activation"></div>
+      </section>
+
+      <!-- Middle: Current Routine -->
+      <section class="column">
+        <h2>Current Routine</h2>
+        <div class="box" id="current-routine"></div>
+      </section>
+
+      <!-- Right: Available -->
+      <section class="column">
+        <h2>Available Exercises</h2>
+        <div class="box" id="available-exercises"></div>
+      </section>
+    </main>
+    <script src="./../static/form_wizard.js"></script>
+    <script src="./../static/script.js"></script>
+  </body>
+</html>
